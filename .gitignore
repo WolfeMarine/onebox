@@ -12,3 +12,17 @@ chefserver/.vagrant/machines/chef-server/virtualbox/index_uuid
 chefserver/.vagrant/machines/chef-server/virtualbox/private_key
 
 chefserver/.vagrant/machines/chef-server/virtualbox/synced_folders
+
+splunkserver/.vagrant/machines/decsent01/virtualbox/action_provision
+
+splunkserver/.vagrant/machines/decsent01/virtualbox/action_set_name
+
+splunkserver/.vagrant/machines/decsent01/virtualbox/creator_uid
+
+splunkserver/.vagrant/machines/decsent01/virtualbox/id
+
+splunkserver/.vagrant/machines/decsent01/virtualbox/index_uuid
+
+splunkserver/.vagrant/machines/decsent01/virtualbox/synced_folders
+
+splunkserver/.vagrant/machines/decsent01/virtualbox/private_key
