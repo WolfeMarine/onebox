@@ -1,0 +1,23 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby
+
+VAGRANT_API_VERSION = "2"
+HOST_NAME = "decsent01"
+IP_ADDRESS = "10.1.1.145"
+
+
+def set_hostname(server)
+  server.vm.provision 'shell', inline: "hostname #{server.vm.hostname}"
+end
+
+
+Vagrant.configure(VAGRANT_API_VERSION) do |config|
+  config.vm.define HOST_NAME do |n|
+    n.vm.box = 'centos7-base'
+    n.vm.hostname = HOST_NAME 
+    n.vm.network 'private_network', ip: IP_ADDRESS
+    n.vm.network "forwarded_port", guest: 80, host: 8080
+    n.vm.network "forwarded_port", guest: 8089, host: 8089
+    set_hostname(n)
+  end
+end
