@@ -9,6 +9,5 @@ Code/configurations within this repository only create the foundation for my dev
 
 ## Requirements
 
-VirtualBox
-
-Vagrant
+* [VirtualBox](https://www.virtualbox.org/wiki/Downloads) 
+* [Vagrant](https://www.vagrantup.com/)
